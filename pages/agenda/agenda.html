@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Agendamento</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <button type="button" class="clear" onclick="logout()">
+            Sair
+        </button>
+    </header>
+    <main class="centralize">
+        <form id="schedule-form">
+            <div class="form-field">
+                <div><label>Data do Agendamento *</label></div>
+                <input type="date" onchange="onChangeDate()" id="date">
+                <div class="error" id="date-required-error">
+                    Data é obrigatória/inválida
+                </div>
+                <div><label>Hora do Agendamento *</label></div>
+                <input type="time" onchange="onChangeTime()" id="time">
+                <div class="error" id="time-required-error">
+                    Hora é obrigatória/inválida
+                </div>
+                <div><label>Hora de Saída *</label></div>
+                <input type="time" onchange="onChangeEndTime()" id="end-time">
+                <div class="error" id="end-time-required-error">
+                    Hora de saída é obrigatória/inválida
+                </div>
+            </div>
+            <div class="form-field">
+                <div><label>Finalidade do Agendamento *</label></div>
+                <select onchange="onChangeScheduleType()" id="schedule-type">
+                    <option value="">-- Selecione um motivo de Agendamento --</option>
+                    <option>Estudo</option>
+                    <option>Pesquisa</option>
+                    <option>Trabalho</option>
+                    <option>Outro</option>
+                </select>
+                <div class="error" id="schedule-type-required-error">
+                    Tipo de agendamento é obrigatória
+                </div>
+            </div>
+            <div class="form-field">
+                <div><label>Descriçao</label></div>
+                <input type="text" id="description">
+            </div>
+
+            <input type="hidden" name="accessKey" value="ec54e720-f695-40b2-a1d1-a95d0bf8d4b1">
+
+            <div class="form-field">
+                <div><label>Email(s)</label></div>
+                <input type="text" name="email" id="emails" placeholder="Email dos convidados separados por vírgula">
+            </div>
+
+            <button type="button" class="solid" disabled id="save-button"onclick="saveSchedule()">Salvar</button>
+
+            <button type="button" class="clear" onclick="cancelSchedule()">Cancelar</button>
+            
+        </form>
+    </main>
+</body>
+
+<link rel="stylesheet" href="../../global.css">
+<link rel="stylesheet" href="agenda.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="../../auth-guard.js"></script>
+<script src="../../loading.js"></script>
+<script src="agenda.js"></script>
+
+</html>

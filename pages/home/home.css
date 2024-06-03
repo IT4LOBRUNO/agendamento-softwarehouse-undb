@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente o conteúdo do body */
+    margin: 0;
+}
+
+header {
+    width: 100%; /* Garante que o header ocupe toda a largura disponível */
+    text-align: right;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    max-width: 600px; /* Define uma largura máxima para a lista */
+    width: 100%; /* Garante que a lista ocupe toda a largura disponível até o máximo */
+    margin: 0 auto; /* Centraliza a lista horizontalmente */
+    overflow-y: auto; /* Adiciona rolagem vertical quando necessário */
+    font-family: 'Helvetica', 'Arial', sans-serif; /* Define a fonte da lista */
+}
+
+/* Customiza a barra de rolagem para navegadores WebKit (Chrome, Safari) */
+ol::-webkit-scrollbar {
+    width: 8px; /* Define a largura da barra de rolagem */
+}
+
+ol::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Cor do trilho da barra de rolagem */
+}
+
+ol::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3); /* Cor do polegar da barra de rolagem */
+    border-radius: 4px; /* Arredonda os cantos do polegar */
+}
+ol::-webkit-scrollbar-button {
+    display: none; /* Remove os botões de rolagem */
+}
+
+/* Customiza a barra de rolagem para Firefox */
+ol {
+    scrollbar-width: thin; /* Define a largura da barra de rolagem para fina */
+    scrollbar-color: rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1); /* Cor do polegar e do trilho */
+}
+
+/* Estilos para os itens da lista */
+ol li {
+    cursor: pointer;
+    color: rgb(221, 212, 212);
+    background: rgba(255, 255, 255, 0.158);
+    padding: 8px 16px;
+    border-bottom: 1px solid rgb(19, 2, 2);
+}
+
+ol li:hover {
+    opacity: 0.8;
+}
+
+/* Outros estilos */
+button {
+    margin: 10px; /* Adiciona margem para os botões */
+}
+
+footer {
+    width: 100%; /* Garante que o footer ocupe toda a largura disponível */
+    display: flex;
+    justify-content: center;
+}
