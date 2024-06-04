@@ -170,6 +170,13 @@ function isFormValid() {
         return false;
     }
 
+    const scheduleDateTime = new Date(`${date}T${time}`);
+    const now = new Date();
+    if (scheduleDateTime < now) {
+        alert('Não é possível agendar para um horário que já passou.');
+        return false;
+    }
+
     return true;
 }
 
