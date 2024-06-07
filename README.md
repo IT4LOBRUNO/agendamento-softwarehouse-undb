@@ -5,7 +5,7 @@
 
 Você pode acessar e testar a aplicação através do seguinte link:
 
-[Visite a Página do Programa](https://it4lobruno.github.io/agendamento-softwarehouse-undb/index.html)
+[Agendamento Softwarehouse](https://it4lobruno.github.io/agendamento-softwarehouse-undb/index.html)
 
 ## **Recursos:**
 
