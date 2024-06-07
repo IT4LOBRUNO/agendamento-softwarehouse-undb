@@ -11,13 +11,9 @@
 - [x] Armazenamento seguro de informações no Firebase
 - [ ] Envio de email para os convidados
 
-## **Princípios de Programação Orientada a Objetos (POO)**
-
-Este projeto segue os principais pilares da Programação Orientada a Objetos (POO), incluindo:
+## **Programação Orientada a Objetos (POO)**
 
 - **Abstração**: Várias funções definidas nesse código representam abstrações de diferentes aspectos do sistema, como manipulação de dados do usuário, validação de entrada de dados, manipulação de datas, entre outros.
 - **Encapsulamento**: Cada função encapsula sua própria lógica e operações, assim existe uma clara separação de responsabilidades. Por exemplo, há uma função que encapsula a lógica de registro de novos usuários (register()), enquanto outra encapsula a validação da correspondência entre senhas (validatePasswordsMatch()).
 - **Herança**: Reutilização de código através da criação de hierarquias de classes, onde as classes filhas herdam características e comportamentos das classes pai.
 - **Polimorfismo**: Diferentes tipos de validação e manipulação de dados que podem ser tratados de formas diferentes no código, como validação para criação e login de usuários e validação de dados do banco de dados.
-
-Estes conceitos foram aplicados de forma a promover uma estrutura de código organizada, modular e de fácil manutenção.
