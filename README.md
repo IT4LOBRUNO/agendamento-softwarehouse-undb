@@ -1,6 +1,12 @@
 # Agendamento Softwarehouse
 <p>Esse projeto foi criado para solucionar problemas de agendamento da sala da softwarehouse, garantindo a eficiência na marcação de horários e no uso dos espaços disponíveis. Ele visa projetar uma interface intuitiva que permita aos usuários realizar o agendamento da sala de forma segura, além de implementar um sistema de banco de dados para armazenar informações sobre horários de reserva e usuários. Utiliza Javascript, HTML, CSS e um banco de dados no Firebase para uma autenticação segura de usuários e armazenamento das informações de agendamento. Esta solução proporciona uma maneira eficaz e conveniente de gerenciar o agendamento das salas, promovendo uma melhor utilização dos recursos disponíveis.</p>
 
+## Visite a Página do Programa
+
+Você pode acessar e testar a aplicação através do seguinte link:
+
+[Visite a Página do Programa](https://it4lobruno.github.io/agendamento-softwarehouse-undb/index.html)
+
 ## **Recursos:**
 
 - [x] Criação de usuários
@@ -9,7 +15,7 @@
 - [x] Agendamento sem conflitos
 - [x] Interface intuitiva para agendamento
 - [x] Armazenamento seguro de informações no Firebase
-- [ ] Envio de email para os convidados
+- [ ] Envio de email para os convidados **(Script de E-mail em construção)**
 
 ## **Programação Orientada a Objetos (POO)**
 
